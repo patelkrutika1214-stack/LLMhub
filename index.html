@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LLMHUB – Every AI. One Launchpad.</title>
+<meta name="description" content="Discover the world's most powerful AI models and launch them instantly from one hub. Search, filter and open ChatGPT, Claude, Gemini and more.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LLMHUB – Every AI. One Launchpad.">
+<meta property="og:description" content="Browse, compare and open the leading AI platforms from one beautifully designed hub.">
+<meta name="theme-color" content="#050508">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i><div class="grid"></div><div id="particles"></div><div class="grain"></div></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="logo">◈ LLMHUB</a>
+  <nav aria-label="Primary"><ul id="navlinks">
+    <li><a href="#discover">Discover</a></li><li><a href="#models">Models</a></li><li><a href="#categories">Categories</a></li><li><a href="#compare">Compare</a></li><li><a href="#about">About</a></li>
+  </ul></nav>
+  <div class="nav-r">
+    <button class="kbd-btn" data-open-palette aria-label="Open search">Search <kbd>⌘ K</kbd></button>
+    <a class="btn glow sm" href="#models">EXPLORE AI →</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="discover">
+  <div class="orb" aria-hidden="true"></div><div class="ring r1" aria-hidden="true"></div><div class="ring r2" aria-hidden="true"></div>
+  <div class="hero-in">
+    <span class="badge">✦ THE AI DIRECTORY</span>
+    <h1>EVERY AI.<br><span class="grad">ONE LAUNCHPAD.</span></h1>
+    <p>Discover the world's most powerful AI models and launch them instantly from one beautifully designed hub.</p>
+    <div class="cta"><a class="btn glow" href="#models">EXPLORE LLMS →</a><a class="btn ghost" href="#categories">VIEW CATEGORIES</a></div>
+    <div class="live"><i></i><span id="liveCount">14</span> AI PLATFORMS</div>
+  </div>
+</section>
+
+<section class="wrap" id="search-sec">
+  <div class="searchbox"><span aria-hidden="true">⌕</span>
+    <input id="search" type="search" placeholder="Search AI models..." aria-label="Search AI models" autocomplete="off"><kbd>⌘ K</kbd></div>
+  <p class="found" id="found" aria-live="polite"></p>
+</section>
+
+<section class="wrap reveal" id="featured"><h2>Featured Intelligence</h2><div class="feat-grid" id="featGrid"></div></section>
+
+<section class="wrap reveal" id="models">
+  <h2>Explore All AI</h2>
+  <div class="toolbar"><div class="pills" id="pills" role="group" aria-label="Filter by category"></div>
+    <label class="sort">Sort <select id="sort"><option value="popular">Popular</option><option value="newest">Newest</option><option value="open">Open Source</option><option value="az">Alphabetical</option></select></label></div>
+  <div class="grid-cards" id="cards"></div>
+  <p class="empty" id="empty" hidden>No models match. Try a different search or filter.</p>
+</section>
+
+<section class="wrap reveal" id="compare"><h2>Compare Intelligence</h2>
+  <div class="table-glow"><div class="table-scroll"><table>
+    <thead><tr><th>AI</th><th>Company</th><th>Type</th><th>Coding</th><th>Reasoning</th><th>Search</th><th>Multimodal</th><th>Open</th></tr></thead><tbody id="tbody"></tbody></table></div></div>
+  <p class="note">● documented capability &nbsp; ◐ partial or via add-ons &nbsp; – not a core focus. Based on each platform's public descriptions.</p>
+</section>
+
+<section class="wrap reveal" id="categories"><h2>Categories</h2><div class="cat-grid" id="catGrid"></div></section>
+
+<section class="wrap reveal" id="picker"><h2>Not sure which AI to use?</h2>
+  <div class="panel"><p class="q">What do you want to do?</p><div class="pills" id="intents"></div><div class="recs" id="recs" aria-live="polite"></div></div></section>
+
+<section class="wrap reveal"><div class="spot" id="spot"></div></section>
+
+<section class="wrap reveal stats">
+  <div><b data-to="14" data-suffix="+">0</b><span>AI PLATFORMS</span></div><div><b data-to="8">0</b><span>CATEGORIES</span></div><div><b data-to="1">0</b><span>LAUNCHPAD</span></div><div><b>∞</b><span>POSSIBILITIES</span></div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<section class="wrap reveal about" id="about"><h2>About</h2><p>LLMHUB is a directory and launchpad. It doesn't run any AI itself — every card links to the platform's official website, which opens in a new tab.</p></section>
+</main>
+
+<footer>
+  <div class="foot-in"><div><a href="#top" class="logo">◈ LLMHUB</a><p>One place to discover AI.</p></div>
+    <ul><li><a href="#discover">Discover</a></li><li><a href="#models">Models</a></li><li><a href="#categories">Categories</a></li><li><a href="#compare">Compare</a></li><li><a href="#about">About</a></li></ul>
+    <ul><li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li><li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a></li><li><a href="https://discord.com" target="_blank" rel="noopener noreferrer">Discord</a></li></ul></div>
+  <div class="foot-b"><span>© 2026 LLMHUB</span><span>Built for the AI era.</span></div>
+</footer>
+
+<div class="palette" id="palette" hidden role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="pal-box"><input id="palInput" placeholder="Search AI or run a command..." aria-label="Command input" autocomplete="off"><ul id="palList"></ul><div class="pal-foot"><span>↑↓ navigate</span><span>↵ select</span><span>ESC close</span></div></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
